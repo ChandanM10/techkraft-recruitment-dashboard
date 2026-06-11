@@ -33,14 +33,14 @@ export default function LoginPage() {
         <div className="login-visual-content">
           <div className="login-visual-orb" />
           <h1 className="login-visual-title">
-            Candidate<br /><span>Intelligence</span><br />Platform
+            Candidate<br /><span>review & score</span><br />Workflow
           </h1>
           <p className="login-visual-desc">
-            AI-powered scoring, deep behavioral profiling, and structured
-            evaluation workflows — built for how modern teams actually hire.
+            Structured category scoring, collaborative reviewer workflows, and
+            full pipeline visibility — built for how modern teams actually hire.
           </p>
           <div className="login-visual-chips">
-            {['Role-Based Access', 'AI Summaries', 'Score Analytics', 'Soft Delete', 'SSE Streaming'].map(c => (
+            {['Role-Based Access', 'Category Scoring', 'Reviewer Notes', 'Pipeline Filters', 'Admin Controls'].map(c => (
               <span key={c} className="login-chip">{c}</span>
             ))}
           </div>

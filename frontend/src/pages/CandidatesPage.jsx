@@ -89,7 +89,7 @@ export default function CandidatesPage() {
             <div className="brand-wordmark">Tech<span>Kraft</span></div>
           </div>
           <span className="topbar-sep">/</span>
-          <span className="topbar-context">Intelligence Platform</span>
+          <span className="topbar-context">Review & Score Workflow</span>
         </div>
         <div className="topbar-right">
           <span className="role-badge" data-role={user?.role}>{user?.role}</span>

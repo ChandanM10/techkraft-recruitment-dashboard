@@ -315,16 +315,16 @@ export default function CandidateDetailPage() {
           {/* Right column */}
           <div className="detail-col">
 
-            {/* AI Intelligence card */}
+            {/* Review summary card */}
             <div className="card">
               <div className="card-header">
                 <div className="card-title">
                   <div className="card-title-icon" style={{background:'linear-gradient(135deg,rgba(99,210,180,0.2),rgba(167,139,250,0.15))',color:'var(--neo)'}}>◈</div>
-                  AI Intelligence
+                  Review Summary
                 </div>
                 <button className="btn btn-secondary" onClick={handleGenerate} disabled={aiLoading}
                   style={{fontSize:12}}>
-                  {aiLoading ? '◌ Thinking…' : currentSummary ? '⟳ Regenerate' : '▶ Analyse'}
+                  {aiLoading ? '◌ Generating…' : currentSummary ? '⟳ Regenerate' : '▶ Generate'}
                 </button>
               </div>
               <div className="card-body ai-panel">
@@ -352,7 +352,7 @@ export default function CandidateDetailPage() {
                       <div className="ai-skeleton w75" />
                       <div className="ai-gen-label">
                         <div className="ai-gen-dot" />
-                        Generating {aiTab} analysis…
+                        Generating {aiTab} summary…
                       </div>
                     </div>
                   ) : aiError ? (
@@ -360,9 +360,8 @@ export default function CandidateDetailPage() {
                   ) : currentSummary ? (
                     <div>
                       <div className="ai-header-row">
-                        <span className="ai-badge-chip">AI</span>
                         <span className="ai-category-label"
-                          style={{color: CAT_COLORS[aiTab]}}>{aiTab} Analysis</span>
+                          style={{color: CAT_COLORS[aiTab]}}>{aiTab} Summary</span>
                       </div>
                       <p className="ai-text">{currentSummary}</p>
                     </div>
@@ -370,7 +369,7 @@ export default function CandidateDetailPage() {
                     <div className="ai-empty">
                       <div className="ai-empty-icon">{CAT_ICONS[aiTab]}</div>
                       <div className="ai-empty-text">
-                        No {aiTab} analysis yet.<br />Click <strong>Analyse</strong> to generate.
+                        No {aiTab} summary yet.<br />Click <strong>Generate</strong> to create one.
                       </div>
                     </div>
                   )}
