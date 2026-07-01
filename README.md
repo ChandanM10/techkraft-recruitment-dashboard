@@ -26,8 +26,7 @@ docker compose up --build
 ### Demo Accounts (seeded automatically)
 
 | Role     | Email                      | Password   |
-|----------|----------------------------|------------|
-| Admin    | admin@techkraft.com        | admin123   |
+|----------|----------------------------|------------|  |
 | Reviewer | reviewer@techkraft.com     | review123  |
 
 ---
